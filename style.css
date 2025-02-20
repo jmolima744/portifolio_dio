@@ -1,9 +1,53 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* comprime o conteudo filho para se adaptar e efetuar performance  */
+    /* habilita  processo para os filhos no flex-direction (display-flex) */
+
+    /* A propriedade "display: flex;" é a chave para ativar o Flexbox em um elemento. 
+    Isso faz com que os elementos filhos desse elemento pai se tornem itens flexíveis,
+     permitindo que você os organize e alinhe de forma dinâmica.  */
+}
+
 body{
+    height: 100vh;
     background-color: black;
     color: white;
+    
 }
 
 .titulo-destaque{
     color: #22D4FD;
 }
+.apresentacao{
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.apresentacao__conteudo{
+    width: 615px;
+}
+
+.apresentacao__conteudo__titulo{
+
+    font-size: 36px;
+    /* tamanho do texto */
+}
+
+.apresentacao__conteudo__texto{
+
+    font-size: 24px;
+}
+
+
+/* 
+
+Um link para o meu site (favorito)
+
+<p>Um link para o meu <a href="https://www.mozilla.org/" title="Página da Mozilla" target="_blank"> site favorito</a>.</p> 
+
+*/
